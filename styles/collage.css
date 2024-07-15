@@ -4,8 +4,8 @@ img{
 }
 
 .row{
-    height: 400px;
-    display: flex;
+    /* height: 400px; */
+    /* display: flex; */
     gap: 5px;
     margin-bottom: 5px;
 }
@@ -19,4 +19,20 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+}
+
+/* Responsive Media Query */
+
+@media screen and(max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+.square-collage{
+    grid-template-columns: 1fr;
+}
+}
+/* medin devices */
+@media screen and (min-width: 576px) and (max-with: 992px){
+    
 }
